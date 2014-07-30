@@ -67,7 +67,7 @@ uniformField xs = map growOrShrink xs
 
 -- | Return a string of the csv list for saving to a file
 printCSV :: String -> [[String]] -> String
-printCSV sep = intercalate "\n" . map (intercalate sep)
+printCSV sep = unlines . map (intercalate sep)
 
 labmateToSanity :: Options -> IO ()
 labmateToSanity opts = do
