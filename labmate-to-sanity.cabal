@@ -53,7 +53,7 @@ executable labmate-to-sanity
   -- other-modules:       
   
   -- Other library packages from which modules are imported.
-  build-depends:       base >=4.6, optparse-applicative >=0.9, split >=0.2
+  build-depends:       base ==4.6.*, optparse-applicative ==0.10.*, split ==0.2.*
   
   -- Directories containing source files.
   hs-source-dirs:      src
